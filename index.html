@@ -224,8 +224,20 @@ section{position:relative;z-index:1;padding:80px 20px;}
 .app-feat-item{display:flex;align-items:flex-start;gap:9px;font-size:.85rem;color:#B3D4FF;}
 .feat-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px;}
 .app-dl-row{display:flex;flex-direction:column;gap:8px;}
-.dl-btn{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.22);border-radius:12px;padding:9px 16px;text-decoration:none;color:white;font-size:.83rem;font-weight:800;transition:all .22s;}
-.dl-btn:hover{background:rgba(255,255,255,.2);transform:translateX(4px);}
+.dl-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,.1);
+  border: 1.5px solid rgba(255,255,255,.22);
+  border-radius: 12px;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: white;
+  font-size: .83rem;
+  font-weight: 800;
+  transition: all .22s;
+}.dl-btn:hover{background:rgba(255,255,255,.2);transform:translateX(4px);}
 .dl-icon{font-size:1.5rem;}
 .dl-txt small{display:block;font-size:.65rem;opacity:.65;}
 
@@ -838,16 +850,31 @@ footer{background:var(--navy);color:#90CAF9;padding:48px 20px 22px;}
           <li class="app-feat-item"><div class="feat-dot"></div>Available for iOS (App Store) & Android</li>
           <li class="app-feat-item"><div class="feat-dot"></div>Designed for students, parents & teachers</li>
         </ul>
-        <div class="app-dl-row">
-          <a class="dl-btn" href="https://apps.apple.com/my/app/egk-anti-bully-careline/id6751313916" target="_blank">
-            <span class="dl-icon">🍎</span>
-            <div class="dl-txt"><small>Download on the</small><strong>App Store</strong></div>
-          </a>
-          <a class="dl-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfzLbXExUxUqVKPNHBOw_EI5B4wgoa8QdfyCU7s5wXh8VLnXw/viewform" target="_blank">
-            <span class="dl-icon">🤖</span>
-            <div class="dl-txt"><small>Register for</small><strong>Android Version</strong></div>
-          </a>
-        </div>
+<div class="app-dl-row">
+
+  <!-- Apple -->
+  <a class="dl-btn" href="https://apps.apple.com/my/app/egk-anti-bully-careline/id6751313916" target="_blank">
+    <img class="dl-icon-img"
+         src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+         alt="Apple">
+    <div class="dl-txt">
+      <small>Download on the</small>
+      <strong>App Store</strong>
+    </div>
+  </a>
+
+  <!-- Android -->
+  <a class="dl-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfzLbXExUxUqVKPNHBOw_EI5B4wgoa8QdfyCU7s5wXh8VLnXw/viewform" target="_blank">
+    <img class="dl-icon-img"
+         src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg"
+         alt="Android">
+    <div class="dl-txt">
+      <small>Register for</small>
+      <strong>Android Version</strong>
+    </div>
+  </a>
+
+</div>
       </div>
       <!-- PDRM Border -->
       <div class="app-card reveal">
@@ -865,16 +892,31 @@ footer{background:var(--navy);color:#90CAF9;padding:48px 20px 22px;}
           <li class="app-feat-item"><div class="feat-dot"></div>Critical for bully victims needing to file a formal report</li>
           <li class="app-feat-item"><div class="feat-dot"></div>iOS App Store — free to download</li>
         </ul>
-        <div class="app-dl-row">
-          <a class="dl-btn" href="https://apps.apple.com/my/app/egk-pdrmborder/id6754896877" target="_blank">
-            <span class="dl-icon">🍎</span>
-            <div class="dl-txt"><small>Download on the</small><strong>App Store</strong></div>
-          </a>
-          <a class="dl-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdhPu0sIyrlN_3hMPY-siBaywzOXob_R6ViA15NkyxxjOHhVQ/viewform" target="_blank">
-            <span class="dl-icon">🚔</span>
-            <div class="dl-txt"><small>Register for</small><strong>Android Version</strong></div>
-          </a>
-        </div>
+<div class="app-dl-row">
+
+  <!-- Apple -->
+  <a class="dl-btn" href="https://apps.apple.com/my/app/egk-pdrmborder/id6754896877" target="_blank">
+    <img class="dl-icon-img"
+         src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+         alt="Apple">
+    <div class="dl-txt">
+      <small>Download on the</small>
+      <strong>App Store</strong>
+    </div>
+  </a>
+
+  <!-- Android -->
+  <a class="dl-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdhPu0sIyrlN_3hMPY-siBaywzOXob_R6ViA15NkyxxjOHhVQ/viewform" target="_blank">
+    <img class="dl-icon-img"
+         src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg"
+         alt="Android">
+    <div class="dl-txt">
+      <small>Register for</small>
+      <strong>Android Version</strong>
+    </div>
+  </a>
+
+</div>
       </div>
       
             <!-- CharacterEdu AR -->
@@ -893,7 +935,29 @@ footer{background:var(--navy);color:#90CAF9;padding:48px 20px 22px;}
           <li class="app-feat-item"><div class="feat-dot"></div>Quest-based activities for classroom & home</li>
           <li class="app-feat-item"><div class="feat-dot"></div>Worth USD 29.99 — FREE with book purchase</li>
         </ul>
-        <div style="background:rgba(255,214,0,.12);border:1px solid rgba(255,214,0,.3);border-radius:10px;padding:10px 14px;margin-top:4px;">
+        <div class="app-dl-row">
+
+  <!-- Apple -->
+  <a class="dl-btn" href="https://apps.apple.com/my/app/egk-characteredu-ar/id6754547233" target="_blank">
+    <img class="dl-icon-img"
+         src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+         alt="Apple">
+    <div class="dl-txt">
+      <small>Download on the</small>
+      <strong>App Store</strong>
+    </div>
+  </a>
+
+  <!-- Android -->
+  <a class="dl-btn" href="https://buy.stripe.com/8x26oGgQ97hb3Iz5QV6Zy0c" target="_blank">
+    <img class="dl-icon-img"
+         src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg"
+         alt="Android">
+    <div class="dl-txt">
+      <small>Register for</small>
+      <strong>Android Version</strong>
+    </div>
+  </a>
           <p style="color:var(--gold);font-size:.82rem;font-weight:800;">🎁 Promo Code included with every book purchase</p>
           <p style="color:#90CAF9;font-size:.75rem;margin-top:2px;">Scan QR code inside the book to download & activate</p>
         </div>
